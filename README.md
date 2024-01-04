@@ -1,2 +1,2 @@
 # web2
-Pagina web de juegos
+Color Favorito[#00ff00]
