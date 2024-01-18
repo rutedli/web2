@@ -1,0 +1,19 @@
+.custom-Box {
+    width: 200px;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .custom-Box.visible {
+    opacity: 1;
+  }
+  
+  .custom-Box.hidden {
+    opacity: 0;
+    pointer-events: none; /* Para desactivar interacciones con el recuadro oculto */
+  }
+  

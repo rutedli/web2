@@ -1,16 +1,21 @@
-import "./styles.css";
-import { useState } from "react";
+import React, { useState } from 'react';
+import Button from './components/Button';
+import Box from './components/Box';
+import './App.css';
 
-export default function App() {
-  ///////////////////////////////////////////
-  /******** State varaibles assignment ******/
+const App = () => {
+  const [boxVisible, setBoxVisible] = useState(true);
 
-  const [show, setShow] = useState(true);
+  const handleButtonClick = () => {
+    setBoxVisible(!boxVisible);
+  };
 
   return (
-    <div className="container">
-      <button onClick={() => setShow((show) => !show)}> Show / Hide</button>
-      {show ? <h1>Welcome to React Challenges</h1> : null}
+    <div className="app">
+      <Button onClick={handleButtonClick} />
+      <Box visible={boxVisible} />
     </div>
   );
-}
+};
+
+export default App;
